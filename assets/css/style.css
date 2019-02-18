@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Open Sans", arial;
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ec0e0e;
+  background-image: url("https://www.transparenttextures.com/patterns/broken-noise.png");
+  text-align: center;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+body.online {
+  background-color: #00d900;
+}
+body.verbonden {
+  background-color: #ffa90d;
+}
+body.verwerken {
+  background-color: #1b7df5 !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px 0px 10px 0px;
+  color: #000;
+  font-family: "Open Sans", arial;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 120%;
+  overflow: hidden;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 20px;
+}
+
+p {
+  color: #444;
+  font-family: "Open Sans", arial;
+  margin-bottom: 10px;
+}
+
+.hoeken_4 {
+  border-radius: 4px;
+}
+.hoeken_10 {
+  border-radius: 10px;
+}
+.hoeken_10_links {
+  border-radius: 10px 0px 0px 10px;
+}
+.hoeken_helft {
+  border-radius: 50%;
+}
+.csstransitie {
+  transition: all 250ms ease;
+}
+
+header {
+  margin: 50px 100px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 25px;
+  background-color: #fff;
+}
+
+.statusbalk {
+  text-align: left;
+  background-color: #eee;
+  overflow: hidden;
+}
+.statusbalk .status {
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
+  margin-right: 15px;
+  padding: 0px 15px;
+  background-color: #ec0e0e;
+}
+body.verbonden .statusbalk .status {
+  background-color: #ffa90d;
+}
+body.online .statusbalk .status {
+  background-color: #00d900;
+}
+body.verwerken .statusbalk .status {
+  background-color: #1b7df5 !important;
+}
+
+.statusbalk .response {
+  color: #000;
+  line-height: 30px;
+}
+
+#recorder {
+  position: fixed;
+  right: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  overflow: visible;
+  z-index: 1;
+  cursor: default;
+}
+#recorder .icoon {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: url("../afbeeldingen/iconen/icoon.microfoon.svg") center center
+    no-repeat #ccc;
+  background-size: 80px 117.5px;
+  border: 10px solid #fff;
+  overflow: hidden;
+  z-index: 2;
+}
+#recorder.actief .icoon {
+  background-color: #222;
+}
